@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Hassaan Ahmad — Full Stack AI Solutions Engineer</title>
+<meta name="description" content="Hassaan Ahmad is a Full Stack AI Solutions Engineer specializing in LLMs, RAG systems, computer vision and scalable AI backend infrastructure." />
+<meta name="author" content="Hassaan Ahmad" />
+
+<!-- Open Graph -->
+<meta property="og:title" content="Hassaan Ahmad — Full Stack AI Solutions Engineer" />
+<meta property="og:description" content="Full Stack AI Solutions Engineer building LLM/RAG systems, computer vision pipelines and production AI infrastructure." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="assets/img/header/4.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<!-- Favicon -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%2307080c'/%3E%3Cpath d='M20 30 L20 20 L30 20 M70 20 L80 20 L80 30 M80 70 L80 80 L70 80 M30 80 L20 80 L20 70' stroke='%2322d3ee' stroke-width='6' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='50' cy='50' r='14' fill='%236366f1'/%3E%3C/svg%3E" />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="style.css" />
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Hassaan Ahmad",
+  "jobTitle": "Full Stack AI Solutions Engineer",
+  "url": "https://www.upwork.com/freelancers/~01c565230a64ece744",
+  "sameAs": [
+    "https://www.upwork.com/freelancers/~01c565230a64ece744"
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- Loader -->
+<div id="loader">
+  <div class="loader-mark">
+    <div class="loader-frame"><span></span><span></span><span></span><span></span></div>
+    INITIALIZING
+  </div>
+</div>
+
+<div id="scroll-progress"></div>
+<canvas id="bg-canvas"></canvas>
+<div class="bg-mesh"></div>
+<div class="bg-grid"></div>
+
+<!-- ============ NAV ============ -->
+<header id="navbar">
+  <div class="container nav-inner">
+    <a href="#hero" class="logo"><span class="dot"></span>HASSAAN <b>AHMAD</b></a>
+
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#work">Projects</a>
+      <a href="#contact">Hire Me</a>
+    </nav>
+
+    <div class="nav-cta">
+      <a href="https://www.upwork.com/freelancers/~01c565230a64ece744?mp_source=share" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">Upwork</a>
+      <a href="#contact" class="btn btn-primary btn-sm">Let's talk</a>
+      <button class="burger" id="burger" aria-label="Toggle menu"><span></span></button>
+    </div>
+  </div>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#work">Projects</a>
+    <a href="#contact">Hire Me</a>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section id="hero" class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="hero-kicker"><span class="bar"></span>AVAILABLE FOR HIRE ON UPWORK</div>
+      <h1>Building <span class="grad">full-stack AI</span><br>systems that ship<br>to production.</h1>
+      <div class="hero-role">&gt; <span id="hero-role-text"></span><span class="cursor">&nbsp;</span></div>
+      <p class="lede">I'm Hassaan, a Full Stack AI Solutions Engineer. I design and deploy LLM/RAG pipelines, computer vision systems, and scalable backend infrastructure, taking projects from prototype to reliable production deployment on cloud and edge.</p>
+      <div class="hero-ctas">
+        <a href="#work" class="btn btn-primary">View Projects</a>
+        <a href="https://www.upwork.com/freelancers/~01c565230a64ece744?mp_source=share" target="_blank" rel="noopener" class="btn btn-ghost">Hire Me on Upwork</a>
+      </div>
+      <div class="hero-meta">
+        <div><span class="num">6</span><span class="lbl">Featured Projects</span></div>
+        <div><span class="num">4+</span><span class="lbl">Years Experience</span></div>
+        <div><span class="num">4</span><span class="lbl">AI Engineering Roles</span></div>
+        <div><span class="num">MS</span><span class="lbl">Data Science</span></div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-portrait frame is-visible">
+        <div class="ring"></div>
+        <div class="photo-wrap">
+          <img src="images/prof.jpeg" alt="Portrait of Hassaan Ahmad" />
+          <div class="scanline"></div>
+        </div>
+        <div class="frame-corners big"><i></i><i></i><i></i><i></i></div>
+        <span class="tag tag-1">human: 0.99</span>
+        <span class="tag tag-2">ai-engineer</span>
+        <span class="tag tag-3">fastapi · pytorch</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-cue"><span>SCROLL</span><span class="line"></span></div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Biography</div>
+      <h2>A little about me</h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-card reveal">
+        <div class="row"><span>Name</span><span>Hassaan Ahmad</span></div>
+        <div class="row"><span>Role</span><span>Full Stack AI Solutions Engineer</span></div>
+        <div class="row"><span>Focus</span><span>LLMs, RAG, Computer Vision, MLOps</span></div>
+        <div class="row"><span>Experience</span><span>4+ Years</span></div>
+        <div class="row"><span>Availability</span><span>Open for Freelance Projects</span></div>
+        <div class="row"><span>Hire Me</span><span><a href="https://www.upwork.com/freelancers/~01c565230a64ece744?mp_source=share" target="_blank" rel="noopener">Upwork Profile</a></span></div>
+      </div>
+
+      <div class="about-text reveal">
+        <p>Full Stack AI Solutions Engineer specializing in Large Language Models, computer vision and scalable backend systems, focused on turning research ideas into reliable, production-ready software.</p>
+        <p>I build systems end-to-end — from real-time computer vision pipelines and facial recognition access control, to RAG-powered document retrieval and Q/A chatbots, to fine-tuned LLMs for healthcare a solution. My experience spans on-prem and cloud deployment, container orchestration, and building AI-agnostic APIs that make models easy to integrate and scale.</p>
+        <p>I enjoy collaborating with teams around the world — new problems are how I keep growing as an engineer.</p>
+
+        <div class="socials">
+          <a class="social-btn" href="https://www.upwork.com/freelancers/~01c565230a64ece744?mp_source=share" target="_blank" rel="noopener" title="Upwork" aria-label="Upwork">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 12a4 4 0 0 1-4-4V4"/><path d="M7 20a4 4 0 0 0 4-4v-1.5"/><circle cx="7" cy="10" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container"><div class="divider"></div></div>
+
+<!-- ============ SKILLS ============ -->
+<section id="skills">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Toolkit</div>
+      <h2>Skills &amp; technologies</h2>
+      <p>Core tools I reach for across model development, backend engineering and deployment.</p>
+    </div>
+
+    <div class="skill-group-label reveal">Languages &amp; frameworks</div>
+    <div class="skills-grid" data-stagger>
+      <div class="skill-card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></svg></div>
+        <h4>Python</h4><p>Primary language</p>
+      </div>
+      <div class="skill-card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18M3 12h18"/></svg></div>
+        <h4>PyTorch</h4><p>Deep learning</p>
+      </div>
+      <div class="skill-card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 17V7l8-4 8 4v10l-8 4-8-4Z"/><path d="M4 7l8 4 8-4M12 11v10"/></svg></div>
+        <h4>FastAPI / Django</h4><p>Backend services</p>
+      </div>
+      <div class="skill-card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20V10M18 20V4M6 20v-6"/></svg></div>
+        <h4>C++ / Java</h4><p>Systems &amp; perf.</p>
+      </div>
+    </div>
+
+    <div class="skill-group-label reveal">AI, LLMs &amp; computer vision</div>
+    <div class="skills-grid" data-stagger>
+      <div class="skill-card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg></div>
+        <h4>OpenCV</h4><p>Image processing</p>
+      </div>
+      <div class="skill-card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/></svg></div>
+        <h4>YOLO / DETR</h4><p>Object detection</p>
+      </div>
+      <div class="skill-card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h16v16H4z"/><path d="m4 15 4-4 3 3 5-6 4 4"/></svg></div>
+        <h4>Hugging Face / OpenAI</h4><p>LLMs &amp; fine-tuning</p>
+      </div>
+      <div class="skill-card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+        <h4>Llama-Index</h4><p>RAG &amp; retrieval</p>
+      </div>
+      <div class="skill-card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="m9 12 2 2 4-4"/></svg></div>
+        <h4>Nvidia AI SDKs</h4><p>DeepStream, Triton</p>
+      </div>
+      <div class="skill-card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 3v18M16 3v18M3 8h18M3 16h18"/></svg></div>
+        <h4>Scikit-learn</h4><p>Classical ML</p>
+      </div>
+      <div class="skill-card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 12h4l3 8 4-16 3 8h4"/></svg></div>
+        <h4>NLTK</h4><p>NLP &amp; text processing</p>
+      </div>
+      <div class="skill-card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="6" cy="6" r="2"/><circle cx="18" cy="6" r="2"/><circle cx="12" cy="18" r="2"/><path d="M6 8v3l6 4M18 8v3l-6 4"/></svg></div>
+        <h4>NetworkX</h4><p>Graph analysis</p>
+      </div>
+    </div>
+
+    <div class="skill-group-label reveal">Data, cloud &amp; infrastructure</div>
+    <div class="skills-grid" data-stagger>
+      <div class="skill-card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="12" r="3"/><path d="M6 9v6M8.6 7.4 15.4 10.6M8.6 16.6 15.4 13.4"/></svg></div>
+        <h4>Docker / Kubernetes</h4><p>Orchestration</p>
+      </div>
+      <div class="skill-card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 9h6v6H9z"/></svg></div>
+        <h4>AWS / Azure / GCP</h4><p>Cloud deployment</p>
+      </div>
+      <div class="skill-card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/></svg></div>
+        <h4>Pandas / NumPy / SciPy</h4><p>Data processing</p>
+      </div>
+      <div class="skill-card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+        <h4>Postgres / MySQL / MongoDB</h4><p>Databases &amp; vector search</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container"><div class="divider"></div></div>
+
+<!-- ============ EXPERIENCE ============ -->
+<section id="experience">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Career</div>
+      <h2>Experience</h2>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="dot"></div>
+        <span class="when">Most Recent</span>
+        <h3>Full Stack AI Software Developer</h3>
+        <h4>CENTAIC (NASTP)</h4>
+        <p>Building high-performance, real-time computer vision applications using Nvidia DeepStream &amp; GStreamer, orchestrated across Docker Swarm.</p>
+        <p>Built a video analytics dashboard with multiprocessing for precise control over RTSP streams, and trained/deployed state-of-the-art YOLO models for real-time object detection and tracking.</p>
+        <p>Lead architect for a facial recognition access control system using Nvidia Triton Inference Server, FastAPI, and Milvus DB for search and retrieval.</p>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="dot"></div>
+        <span class="when">Previous</span>
+        <h3>AI Backend Engineer</h3>
+        <h4>Serveden.ai</h4>
+        <p>Developed AI model integration and deployment services, packaging models with BentoML and building model-agnostic service APIs.</p>
+        <p>Defined dynamic AI model input-processing pipelines and used AWS CodeBuild to deploy ECS services for AI models.</p>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="dot"></div>
+        <span class="when">Previous</span>
+        <h3>AI Engineer</h3>
+        <h4>MLsoft.ai</h4>
+        <p>Forecasted and optimized cloud costs using system-level metrics, and designed scalable backend systems with microservice architectures.</p>
+        <p>Implemented RAG systems for user-specific knowledge bases using LLMs, and built a document retrieval, processing and ingestion pipeline with llama-index and Postgres for a Q/A chatbot deployed via Docker Compose.</p>
+        <p>Collaborated on a global outage monitoring system for banking services.</p>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="dot"></div>
+        <span class="when">Earlier</span>
+        <h3>Deep Learning Engineer</h3>
+        <h4>QLU.ai (DNNae Inc)</h4>
+        <p>Used ImageNet-pretrained ResNet-152 for ethnicity classification of profile images, and built a high-performing semantic search solution for extracting relevant information from large text corpora.</p>
+        <p>Designed a profile-ranking mechanism for executive profiles using NLP and statistical methods, and evaluated systems with AUC, Precision and Recall.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container"><div class="divider"></div></div>
+
+<!-- ============ EDUCATION ============ -->
+<section id="education">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Academics</div>
+      <h2>Education</h2>
+    </div>
+
+    <div class="edu-grid">
+      <div class="edu-card reveal">
+        <span class="when">2024</span>
+        <h5>Master's Degree (MS)</h5>
+        <h3>Data Science</h3>
+        <p class="school">FAST, Islamabad</p>
+        <p class="desc">Graduate program focused on machine learning, statistical modeling and large-scale data systems.</p>
+      </div>
+      <div class="edu-card reveal">
+        <span class="when">2022</span>
+        <h5>Bachelor's Degree (BS)</h5>
+        <h3>Computer Science</h3>
+        <p class="school">COMSATS University, Islamabad</p>
+        <p class="desc">Undergraduate program covering core computer science, algorithms and software engineering foundations.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container"><div class="divider"></div></div>
+
+<!-- ============ CERTIFICATIONS ============ -->
+<section id="certifications">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Continuous learning</div>
+      <h2>Certifications</h2>
+      <p>Certifications spanning ML mathematics, cloud infrastructure and deep learning.</p>
+    </div>
+
+    <div class="cert-list">
+      <div class="cert-item reveal"><div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m5 13 4 4L19 7"/></svg></div><div><div class="name">Linear Algebra for Machine Learning</div><div class="provider">Online Certification</div></div></div>
+      <div class="cert-item reveal"><div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m5 13 4 4L19 7"/></svg></div><div><div class="name">Calculus for Machine Learning</div><div class="provider">Online Certification</div></div></div>
+      <div class="cert-item reveal"><div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m5 13 4 4L19 7"/></svg></div><div><div class="name">AWS Cloud Technical Essentials</div><div class="provider">AWS</div></div></div>
+      <div class="cert-item reveal"><div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m5 13 4 4L19 7"/></svg></div><div><div class="name">TensorFlow Developer Professional Certificate</div><div class="provider">DeepLearning.AI</div></div></div>
+      <div class="cert-item reveal"><div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m5 13 4 4L19 7"/></svg></div><div><div class="name">Data Visualization with Python</div><div class="provider">Online Certification</div></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="container"><div class="divider"></div></div>
+
+<!-- ============ PROJECTS ============ -->
+<section id="work">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Selected work</div>
+      <h2>Featured projects</h2>
+      <p>Six projects spanning LLM/RAG systems, computer vision, and production AI infrastructure. Click any card for the full write-up.</p>
+    </div>
+
+    <div class="projects-grid">
+
+      <div class="project-card reveal frame" data-project="facial-recognition">
+        <div class="project-media">
+          <img src="images/FR.jpeg" alt="Facial Recognition Access Control System" loading="lazy" />
+          <div class="scrim"></div>
+          <div class="frame-corners"><i></i><i></i><i></i><i></i></div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags"><span>Computer Vision</span><span>Access Control</span></div>
+          <h3>Facial Recognition Access Control System</h3>
+          <p>Lead architect for a real-time facial recognition system using Nvidia Triton, FastAPI and Milvus for search and retrieval.</p>
+          <div class="project-more">View case study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+        </div>
+      </div>
+
+      <div class="project-card reveal frame" data-project="cv-analytics">
+        <div class="project-media">
+          <img src="images/vid_an.jpeg" alt="Real-Time Video Analytics Platform" loading="lazy" />
+          <div class="scrim"></div>
+          <div class="frame-corners"><i></i><i></i><i></i><i></i></div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags"><span>Computer Vision</span><span>Real-Time</span></div>
+          <h3>Real-Time Video Analytics Platform</h3>
+          <p>DeepStream/GStreamer pipelines orchestrated with Docker Swarm, with a dashboard for RTSP stream and model management.</p>
+          <div class="project-more">View case study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+        </div>
+      </div>
+
+      <div class="project-card reveal frame" data-project="rag-chatbot">
+        <div class="project-media">
+          <img src="images/rag.jpeg" alt="RAG Document Retrieval and Q/A Chatbot" loading="lazy" />
+          <div class="scrim"></div>
+          <div class="frame-corners"><i></i><i></i><i></i><i></i></div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags"><span>LLMs</span><span>RAG</span></div>
+          <h3>RAG Document Retrieval &amp; Q/A Chatbot</h3>
+          <p>Document ingestion pipeline using llama-index and pgvector, deployed as a Docker Compose stack for client knowledge bases.</p>
+          <div class="project-more">View case study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+        </div>
+      </div>
+
+      <div class="project-card reveal frame" data-project="llm-finetune">
+        <div class="project-media">
+          <img src="images/ai-health.jpeg" alt="Fine-Tuned LLMs for healthcare" loading="lazy" />
+          <div class="scrim"></div>
+          <div class="frame-corners"><i></i><i></i><i></i><i></i></div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags"><span>LLMs</span><span>Fine-Tuning</span></div>
+          <h3>Fine-Tuned LLMs for AI in healthcare</h3>
+          <p>QLoRA fine-tuning of Llama-3 and Flan-T5 for causal language modeling and text classification, including SOAP note generation.</p>
+          <div class="project-more">View case study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+        </div>
+      </div>
+
+      <div class="project-card reveal frame" data-project="pose-estimation">
+        <div class="project-media">
+          <img src="images/3d-pose.jpeg" alt="YOLOv11 3D Pose Estimation" loading="lazy" />
+          <div class="scrim"></div>
+          <div class="frame-corners"><i></i><i></i><i></i><i></i></div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags"><span>Computer Vision</span><span>Edge AI</span></div>
+          <h3>YOLOv11 3D Pose Estimation</h3>
+          <p>Stereo vision-based 3D pose estimation with Basler cameras, deployed for real-time inference on Nvidia Jetson AGX Orin.</p>
+          <div class="project-more">View case study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+        </div>
+      </div>
+
+      <div class="project-card reveal frame" data-project="multimodal-assessment">
+        <div class="project-media">
+          <img src="images/voice-ai.jpeg" alt="Real-Time Multimodal Human Interaction & Assessment Engine" loading="lazy" />
+          <div class="scrim"></div>
+          <div class="frame-corners"><i></i><i></i><i></i><i></i></div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags"><span>Multimodal AI</span><span>Real-Time</span></div>
+          <h3>Real-Time Multimodal Human Interaction &amp; Assessment Engine</h3>
+          <p>Fully offline, layered pipeline fusing webcam pose/face/hand tracking with voice feature extraction to drive configurable, hot-reloadable real-time assessment and feedback.</p>
+          <div class="project-more">View case study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+<div class="container"><div class="divider"></div></div>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Get in touch</div>
+      <h2>Let's build something</h2>
+      <p>Available for freelance AI, LLM and computer vision projects — reach out through Upwork.</p>
+    </div>
+
+    <div class="contact-wrap">
+      <div class="contact-card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 12a4 4 0 0 1-4-4V4"/><path d="M7 20a4 4 0 0 0 4-4v-1.5"/><circle cx="7" cy="10" r="3"/><circle cx="18" cy="16" r="3"/></svg></div>
+        <h4>Upwork</h4>
+        <p><a href="https://www.upwork.com/freelancers/~01c565230a64ece744?mp_source=share" target="_blank" rel="noopener">View Profile &amp; Hire</a></p>
+      </div>
+      <div class="contact-card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg></div>
+        <h4>Focus Areas</h4>
+        <p>LLMs, RAG, Computer Vision, MLOps</p>
+      </div>
+      <div class="contact-card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2Z"/></svg></div>
+        <h4>Availability</h4>
+        <p>Open for freelance engagements</p>
+      </div>
+
+      <div class="contact-cta reveal">
+        <div>
+          <h3>Have a role or a project in mind?</h3>
+          <p>Message me directly on Upwork to discuss scope and timelines.</p>
+        </div>
+        <div class="actions">
+          <a class="btn btn-primary" href="https://www.upwork.com/freelancers/~01c565230a64ece744?mp_source=share" target="_blank" rel="noopener">Hire Me on Upwork</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="container footer-inner">
+    <p>&copy; <span id="year"></span> HASSAAN AHMAD — FULL STACK AI SOLUTIONS ENGINEER</p>
+    <p>AVAILABLE FOR HIRE ON UPWORK</p>
+  </div>
+</footer>
+
+<button id="back-to-top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<div class="toast" id="toast"></div>
+
+<!-- ============ PROJECT MODAL ============ -->
+<div class="modal-overlay" id="project-modal">
+  <div class="modal-box">
+    <button class="modal-close" aria-label="Close">&times;</button>
+    <div class="modal-media">
+      <div class="modal-media-main"></div>
+      <div class="modal-thumbs"></div>
+    </div>
+    <div class="modal-details">
+      <div class="project_tags"></div>
+      <h2 class="modal-title"></h2>
+      <p class="overview"></p>
+      <h4>Key Features</h4>
+      <ul class="features_list"></ul>
+      <h4>Technologies Used</h4>
+      <div class="tech_stack"></div>
+      <div class="project_links"></div>
+    </div>
+  </div>
+</div>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="main.js"></script>
+</body>
+</html>
