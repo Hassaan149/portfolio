@@ -407,4 +407,94 @@
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape" && modal?.classList.contains("open")) closeProject();
   });
+
+  /* ============================================================
+     Testimonials — client reviews, injected into a #testimonials
+     section if present, otherwise appended before the footer.
+     ============================================================ */
+  const testimonialsData = [
+    {
+      quote: "Had a great time working with Hassaan. Very patient and understood the requirements well.",
+      rating: 5,
+    },
+    {
+      quote: "Excellent work. Great collaboration from start to finish",
+      rating: 5,
+    },
+    {
+      quote: "Hassaan has been very meticulous and detailed oriented. Very good to work with and learn during the process of building",
+      rating: 5,
+    },
+    {
+      quote: "As always, Mr. Hassan did a great job. Communication was excellent. I highly recommended for AI/ML projects !",
+      rating: 5,
+    },
+    {
+      quote: "Hassaan was extremely helpful. Always eager to finish the task and makes sure it meets our requirements with timely discussions and reviews. Would love to work with him again",
+      rating: 5,
+    },
+    {
+      quote: "I had an excellent experience working with Hassan. He delivered high-quality work, met deadlines consistently, and communicated effectively throughout the project. His professionalism and expertise made the entire process smooth and efficient. I highly recommend him for anyone looking for a reliable and skilled freelancer!",
+      rating: 5,
+    },
+  ];
+
+  function starsMarkup(rating) {
+    let out = "";
+    for (let i = 0; i < 5; i++) {
+      out += `<span class="star${i < rating ? " filled" : ""}" aria-hidden="true">★</span>`;
+    }
+    return out;
+  }
+
+  function renderTestimonials() {
+    let container = document.getElementById("testimonials-grid");
+    let section = document.getElementById("testimonials");
+
+    // Build the section/grid if the page doesn't already have one.
+    if (!section) {
+      section = document.createElement("section");
+      section.id = "testimonials";
+      section.className = "testimonials-section";
+      section.innerHTML = `
+        <div class="container">
+          <h2 class="section-title reveal">Client Testimonials</h2>
+          <div class="testimonials-grid" id="testimonials-grid" data-stagger></div>
+        </div>
+      `;
+      const footer = document.querySelector("footer");
+      if (footer) {
+        footer.parentNode.insertBefore(section, footer);
+      } else {
+        document.body.appendChild(section);
+      }
+      container = section.querySelector("#testimonials-grid");
+    }
+
+    if (!container) return;
+
+    container.innerHTML = testimonialsData
+      .map(
+        (t) => `
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars">${starsMarkup(t.rating)}</div>
+          <p class="testimonial-quote">"${t.quote}"</p>
+        </div>
+      `
+      )
+      .join("");
+
+    // Wire up the reveal + stagger observers for the newly injected nodes.
+    container.querySelectorAll(".reveal").forEach((el) => revealObserver.observe(el));
+    const staggerGroup = document.querySelector("#testimonials [data-stagger]");
+    if (staggerGroup) {
+      Array.from(staggerGroup.children).forEach((child, i) => {
+        child.style.transitionDelay = i * 70 + "ms";
+      });
+    }
+    const titleReveal = section.querySelector(".section-title.reveal");
+    if (titleReveal) revealObserver.observe(titleReveal);
+  }
+
+  renderTestimonials();
 })();
